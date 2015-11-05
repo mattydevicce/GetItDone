@@ -10,7 +10,53 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require_tree .
+ *= require_self
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
+
+.navv {
+	margin-right: 70px;
+}
+
+.sign-in {
+	position: relative;
+	top: 10px;
+	font-size: 1.2em;
+	float:right;
+}
+
+.logout {
+	font-size: 0.8em;
+	padding-bottom: 10px;
+}
+
+.feature {
+	font-size: 0.6em;
+}
+
+.cat-bar {
+	height: 50px;
+	background-color: #DDDDDD;
+	margin: 0 200px;
+	border: 2px solid black;
+}
+
+.cat-nav {
+	list-style: none;
+	display: inline;
+	margin-right: 40px;
+	position: relative;
+	top: 10px;
+	font-size: 1.3em;
+
+	input {
+
+	}
+}
+
+.cat-nav.lack-right-margin {
+	margin-right: 0;
+}
