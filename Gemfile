@@ -33,14 +33,14 @@ gem 'bootstrap-sass', '~> 3.3.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'aws-sdk' # S3 API
+gem 'aws-sdk', '< 2.0' # S3 API
 gem 'paperclip' # file attachment syntax and callbacks
 gem 's3_direct_upload' # direct upload form helper and assets
 gem 'rails_12factor'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
+  #gem 'byebug'
   gem 'pry'
   gem 'better_errors'
   gem "binding_of_caller"
