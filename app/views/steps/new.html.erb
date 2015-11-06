@@ -5,6 +5,9 @@
 <br>
 <form action="/submit_steps" method="post">
 	<input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+	<div>
+	Leave this alone: <input type="text" class="project-name" name="project-id" value=<%= @project.id %>>
+	</div>
 	<div class="field">
 		Step #1:<input type="text" class="input-step" name=1>
 	</div>

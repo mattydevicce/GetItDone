@@ -2,6 +2,7 @@ class ProjectsController < ApplicationController
 
 	def new
 		@project = Project.new
+		@last_project_id = Project.all.last.id
 	end
 
 	def index
