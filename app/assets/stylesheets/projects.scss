@@ -2,8 +2,23 @@
 	color: rgb(82,82,82);
 }
 
+.cart {
+	height: 100px;
+	width: 100px;
+	float: right;
+	display: inline
+}
+
+.cart-total {
+	float: right;
+	position: relative;
+	top: 100px;
+	left: 55px;
+}
+
 .project-steps {
 	list-style: none;
+	padding: 0;
 }
 
 .author {
@@ -29,13 +44,13 @@
 .project-image>img{
 	width: 500px;
 	height: 250px;
-	background-size: 100px 200px;
 	border: 2px solid black;
 }
 
 .project-description {
 	position: relative;
 	top: 15px;
+	padding-bottom: 25px;
 }
 
 .project-description>p {
@@ -44,4 +59,19 @@
 
 .project-step-list {
 	margin-top: 50px;
+}
+
+.project-step {
+	margin-bottom: 100px;
+}
+
+.step-image {
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+.step-image>img {
+	height: 200px;
+	width: 275px;
+	border: 2px solid black;
 }

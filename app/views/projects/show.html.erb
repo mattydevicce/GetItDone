@@ -1,15 +1,15 @@
 <div class="contianer" id="contain"><br>
 	<br>
-	<div class="col-lg-3 col-md-3">Toolbox
+	<div class="col-lg-3 col-md-3"><i class="fa fa-cart-arrow-down fa-5x cart"></i><div><span class="cart-total">$50.00</span></div>
 	</div>
-	<div class="main-display col-lg-9 col-md-6">
+	<div class="main-display col-lg-7 col-md-6">
 		<h2><%= @project.name %></h2>
 		<p class="author">By: <span class="underline"><%= @project.user.first_name %> <%= @project.user.last_name %></span></p>
 		<div class="stars">
-			Star
+			<span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span>
 		</div>
 		<div class="time-money">
-			<span class="time">C <%= @project.est_time %></span>  &nbsp;<span class="money"><%= @project.cost %> usd</span>
+			<span class="time"><i class="fa fa-clock-o"></i> <%= @project.est_time %></span>  &nbsp;<span class="money"><%= @project.cost %> usd</span>
 		</div>
 		<div class="project-image">
 			<img src="/cat.jpeg">
@@ -22,7 +22,14 @@
 			<% if !@steps.empty? %>
 				<ul class="project-steps">
 				<% @steps.each do |step| %>
-					<li class="project-step">Step <%= step.rank %> : <%= step.description %></li>
+					<li class="project-step">
+						
+						<h4>Step <%= step.rank %> : Sample Title</h4><br>
+						<div class="step-image">
+							<img src="/cat.jpeg">
+						</div>
+					 <p><%= step.description %></p>
+					</li>
 				<% end %>
 				</ul>
 			<% else %>
