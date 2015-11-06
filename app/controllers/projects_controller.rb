@@ -22,7 +22,9 @@ class ProjectsController < ApplicationController
 
 	def show
 		@project = Project.find(params[:id])
-
+		if @project.steps
+			@steps = @project.steps
+		end
 	end
 
 

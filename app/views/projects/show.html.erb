@@ -3,5 +3,12 @@
 <h1><%= @project.name %></h1>
 <br>
 <h3><%= @project.description %></h3>
-
-<h3><%= link_to 'Create some steps', new_step_path %></h3>
+<% if @steps %>
+	<ul>
+	<% @steps.each do |step| %>
+		<li>Step <%= step.rank %> : <%= step.description %></li>
+	<% end %>
+	</ul>
+<% else %>
+	<h3><%= link_to 'Create some steps', new_step_path %></h3>
+<% end %>
