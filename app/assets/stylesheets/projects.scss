@@ -4,7 +4,9 @@
 
 .new-project {
 	text-align: center;
+	margin-bottom: 50px;
 }
+
 
 .cart {
 	height: 100px;
@@ -78,4 +80,10 @@
 	height: 200px;
 	width: 275px;
 	border: 2px solid black;
+}
+
+.list {
+	list-style: none;
+	text-align: center;
+	color: blue;	
 }
