@@ -1,3 +1,47 @@
-body {
-	text-align: center;
+#contain {
+	color: rgb(82,82,82);
+}
+
+.project-steps {
+	list-style: none;
+}
+
+.author {
+	font-size: 0.7em;
+	position: relative;
+	bottom: 15px;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.stars {
+	position: relative;
+	bottom: 25px;
+}
+
+.time-money {
+	position: relative;
+	bottom: 25px;
+}
+
+.project-image>img{
+	width: 500px;
+	height: 250px;
+	background-size: 100px 200px;
+	border: 2px solid black;
+}
+
+.project-description {
+	position: relative;
+	top: 15px;
+}
+
+.project-description>p {
+	font-size: 0.8em;
+}
+
+.project-step-list {
+	margin-top: 50px;
 }

@@ -9,7 +9,7 @@
 	Leave this alone: <input type="text" class="project-name" name="project-id" value=<%= @project.id %>>
 	</div>
 	<div class="field">
-		Step #1:<input type="text" class="input-step" name=1>
+		Step #1:<textarea type="text" class="input-step" name=1></textarea>
 	</div>
 	<div class="field">
 		<input type="submit">
@@ -30,7 +30,7 @@
 		console.log(dropdownSelect.val())
 			var numberOfSteps = $(".step-select").val()
 		for(var j=0; j<numberOfSteps; j++) {
-			var newDescription = ("<div class='field'>Step #"+(j+1)+":<input type='textarea' name="+(j+1)+" class='input-step'></div>")
+			var newDescription = ("<div class='field'>Step #"+(j+1)+":<textarea name="+(j+1)+" class='input-step'></textarea></div>")
 			$("form").append(newDescription)
 		}
 		$("form").append("<div class='field'><input type='submit'></div>")
