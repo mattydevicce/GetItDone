@@ -12,7 +12,7 @@
 			<span class="time"><i class="fa fa-clock-o"></i> <%= @project.est_time %></span>  &nbsp;<span class="money"><%= @project.cost %> usd</span>
 		</div>
 		<div class="project-image">
-			<img src="/cat.jpeg">
+			<%= image_tag @project.project_pic.url(:square) %>
 		</div>
 		<div class="project-description">
 			<p><%= @project.description %></p>

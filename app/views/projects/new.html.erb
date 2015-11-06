@@ -1,7 +1,7 @@
 <br>
 <br>
 <br>
-<%= form_for(@project) do |f| %>
+<%= form_for(@project, multipart: true) do |f| %>
 	
 	<div class="projectfield">
     <%= f.label :name %><br>
@@ -21,6 +21,11 @@
   <div class="projectfield">
     <%= f.label :cost %><br>
     <%= f.text_field :cost %>
+  </div>
+
+  <div class="field">
+    <%= f.label :project_pic %>
+    <%= f.file_field :project_pic %>
   </div>
 
   <div class="actions">
