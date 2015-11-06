@@ -2,7 +2,9 @@ class ProjectsController < ApplicationController
 
 	def new
 		@project = Project.new
-		@last_project_id = Project.all.last.id
+		if Project.all.count > 0
+			@last_project_id = Project.all.last.id
+		end
 	end
 
 	def index
