@@ -1,5 +1,37 @@
-<form action="/submit_steps">
-	<input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
 
-	<input type="text" name=""
+<div class="step-number-picker">
+
+</div>
+<br>
+<form action="/submit_steps" method="post">
+	<input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+	<div class="field">
+		Step #1:<input type="text" class="input-step" name=1>
+	</div>
+	<div class="field">
+		<input type="submit">
+	</div>
 </form>
+
+<script type="text/javascript">
+
+	var dropdownSelect = $("<select class='step-select'></select>")
+	for(var i=0; i<10; i++) {
+		dropdownSelect.append(("<option value="+(i+1)+">"+(i+1)+"</option>"))
+	}
+	
+	$('.step-number-picker').append(dropdownSelect)
+
+	dropdownSelect.on('change', function(e) {
+		$('.field').remove()
+		console.log(dropdownSelect.val())
+			var numberOfSteps = $(".step-select").val()
+		for(var j=0; j<numberOfSteps; j++) {
+			var newDescription = ("<div class='field'>Step #"+(j+1)+":<input type='textarea' name="+(j+1)+" class='input-step'></div>")
+			$("form").append(newDescription)
+		}
+		$("form").append("<div class='field'><input type='submit'></div>")
+	})
+
+</script>
+
