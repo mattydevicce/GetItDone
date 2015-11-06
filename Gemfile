@@ -36,6 +36,7 @@ gem 'bootstrap-sass', '~> 3.3.5'
 gem 'aws-sdk' # S3 API
 gem 'paperclip' # file attachment syntax and callbacks
 gem 's3_direct_upload' # direct upload form helper and assets
+gem "figaro"
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
