@@ -1,5 +1,5 @@
 <div class="contianer" id="contain"><br>
-<!-- 	<br>
+	<br>
 	<div class="col-lg-3 col-md-3"><i class="fa fa-cart-arrow-down fa-5x cart"></i><div><span class="cart-total">$50.00</span></div>
 	</div>
 	<div class="main-display col-lg-7 col-md-6">
@@ -11,9 +11,9 @@
 		<div class="time-money">
 			<span class="time"><i class="fa fa-clock-o"></i> <%= @project.est_time %></span>  &nbsp;<span class="money"><%= @project.cost %> usd</span>
 		</div>
-		<div class="project-image">
+<!-- 		<div class="project-image">
 			<%= image_tag @project.project_pic.url(:square) %>
-		</div>
+		</div> -->
 		<div class="project-description">
 			<p><%= @project.description %></p>
 		</div>
@@ -36,5 +36,5 @@
 				<h3><%= link_to 'Create some steps', new_step_path %></h3>
 			<% end %>
 		</div>
-	</div> -->
+	</div>
 </div>
