@@ -27,6 +27,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bcrypt', '~> 3.1.7'
 gem "font-awesome-rails"
 gem 'bootstrap-sass', '~> 3.3.5'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
@@ -34,8 +35,9 @@ gem 'bootstrap-sass', '~> 3.3.5'
 # gem 'capistrano-rails', group: :development
 
 gem 'paperclip' # file attachment syntax and callbacks
-gem 's3_direct_upload' # direct upload form helper and assets
 gem 'rails_12factor'
+
+gem 'aws-sdk', '~> 2'
 gem 'nokogiri', '~> 1.6'
 
 group :development, :test do
